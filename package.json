@@ -3,13 +3,15 @@
   "private": true,
   "type": "module",
   "description": "Mastra agent exporting OTLP traces to `reede serve`. Versions pinned to what was run on 2026-11-21.",
-  "scripts": { "start": "node agent.js" },
+  "scripts": {
+    "start": "node agent.js"
+  },
   "dependencies": {
     "@mastra/core": "1.85.0",
     "@mastra/observability": "1.24.2",
     "@mastra/otel-exporter": "1.6.1",
     "@opentelemetry/exporter-trace-otlp-proto": "0.223.1",
-    "@reede/otel": "github:NMA-vc/reede-otel",
+    "@reede/otel": "git+https://github.com/NMA-vc/reede-otel.git#7f05a93adc6581acf193258a1c09d64b3792a933",
     "ai": "6.0.332",
     "zod": "3.25.76"
   }
